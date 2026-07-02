@@ -1,19 +1,23 @@
 {
   "name": "serverest-cypress",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Testes e2e de frontend e de API para o Serverest usando Cypress.",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "test:frontend": "cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\"",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@faker-js/faker": "^9.9.0",
-    "ajv": "^8.20.0",
+    "@faker-js/faker": "^9.6.0",
+    "ajv": "^8.17.1",
     "cypress": "^13.17.0",
     "eslint": "^8.57.1",
     "eslint-plugin-cypress": "^3.6.0",
-    "prettier": "^3.9.4"
+    "prettier": "^3.4.2"
   }
 }
