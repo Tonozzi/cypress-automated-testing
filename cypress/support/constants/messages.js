@@ -4,5 +4,5 @@ export const MENSAGENS = {
   cadastroOk: "Cadastro realizado com sucesso",
   credenciaisInvalidas: "Email e/ou senha inválidos",
   emailEmUso: "Este email já está sendo usado",
-  tokenAusente: "Token de acesso ausente",
+  tokenAusente: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais",
 };
