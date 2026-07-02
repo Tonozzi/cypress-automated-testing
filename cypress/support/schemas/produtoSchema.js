@@ -1,4 +1,3 @@
-// Contrato do corpo da resposta de "produto criado", validado com AJV.
 export const produtoCriadoSchema = {
   type: "object",
   required: ["message", "_id"],

@@ -1,9 +1,5 @@
 import { ENDPOINTS } from "../constants/endpoints";
 
-// Chamadas HTTP cruas do recurso /usuarios. Sem asserções aqui — quem valida
-// são os specs. O failOnStatusCode desativado permite inspecionar respostas de
-// erro nos cenários negativos e no teardown, em vez de lançar exceção.
-
 export function criarUsuario(usuario) {
   return cy.request({
     method: "POST",

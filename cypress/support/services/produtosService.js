@@ -1,8 +1,5 @@
 import { ENDPOINTS } from "../constants/endpoints";
 
-// Chamadas HTTP cruas do recurso /produtos. As duas escritas exigem token de
-// autenticação, que o chamador passa pelo header Authorization.
-
 export function criarProduto(produto, token) {
   return cy.request({
     method: "POST",
